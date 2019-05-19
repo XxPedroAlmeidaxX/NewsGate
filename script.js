@@ -12,18 +12,37 @@ function getNews(category, callback) {
     })
 }
 
-function setNews() {
-    let tecList = document.getElementById("technologyList")
-    tecList.innerHTML = `
-        <li><a href='noticia.html'>Notícia 1</a></li>
-        <li><a href='noticia.html'>Notícia 2</a></li>
-        <li><a href='noticia.html'>Notícia 3</a></li>
-        <li><a href='noticia.html'>Notícia 4</a></li>
-        <li><a href='noticia.html'>Notícia 5</a></li>
-        <li><a href='#'>Mais notícias...</a></li>`
-    getNews("technology", data => {
-        for (let i = 0; i < 5; i++) {
 
-        }
+function setNews() {
+    getNews("technology", data => {
+        render(data, document.getElementById("technologyList"))
     })
+
+    getNews("entertainment", data => {
+        render(data, document.getElementById("entertainmentList"))
+    })
+
+    getNews("business", data => {
+        render(data, document.getElementById("businessList"))
+    })
+
+    getNews("science", data => {
+        render(data, document.getElementById("scienceList"))
+    })
+
+    getNews("health", data => {
+        render(data, document.getElementById("healthList"))
+    })
+
+    getNews("sports", data => {
+        render(data, document.getElementById("sportsList"))
+    })
+}
+
+function render(data, list) {
+    for (let i = 0; i < 5; i++) {
+        //noinspection JSUnresolvedVariable
+        list.innerHTML += `<li><a href='noticia.html'>${data.articles[i].title}</a></li>`
+    }
+    list.innerHTML += `<li><a href='#'>Mais notícias...</a></li>`
 }
