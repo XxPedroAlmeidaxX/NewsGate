@@ -1,118 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <title>News Gate</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1.0" name="viewport">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="credentials.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
 </head>
 
-<body>
-    <header class="header">
-        <a href='index.html'><img src='logo.png' alt='Site&#39s Logo '></a>
-    </header>
-    <div class="container">
-        <section>
-            <h1>Ciência e tecnologia</h1>
-            <ul>
-                <li><a href='noticia.html'>Notícia 1 ueoauaoeueaoueoauoeauoaeuoeaueoauoeauoeauoeueoa</a></li>
-                <li><a href='noticia.html'>Notícia 2</a></li>
-                <li><a href='noticia.html'>Notícia 3</a></li>
-                <li><a href='noticia.html'>Notícia 4</a></li>
-                <li><a href='noticia.html'>Notícia 5</a></li>
-                <li><a href='#'>Mais notícias...</a></li>
-            </ul>
-        </section>
-        <section>
-            <h1>Cultura e entretenimento</h1>
-            <ul>
-                <li><a href='noticia.html'>Notícia 1</a></li>
-                <li><a href='noticia.html'>Notícia 2</a></li>
-                <li><a href='noticia.html'>Notícia 3</a></li>
-                <li><a href='noticia.html'>Notícia 4</a></li>
-                <li><a href='noticia.html'>Notícia 5</a></li>
-                <li><a href='#'>Mais notícias...</a></li>
-            </ul>
-        </section>
-        <section>
-            <h1>Desastres e acidentes</h1>
-            <ul>
-                <li><a href='noticia.html'>Notícia 1</a></li>
-                <li><a href='noticia.html'>Notícia 2</a></li>
-                <li><a href='noticia.html'>Notícia 3</a></li>
-                <li><a href='noticia.html'>Notícia 4</a></li>
-                <li><a href='noticia.html'>Notícia 5</a></li>
-                <li><a href='#'>Mais notícias...</a></li>
-            </ul>
-        </section>
-        <section>
-            <h1>Economia e negócios</h1>
-            <ul>
-                <li><a href='noticia.html'>Notícia 1</a></li>
-                <li><a href='noticia.html'>Notícia 2</a></li>
-                <li><a href='noticia.html'>Notícia 3</a></li>
-                <li><a href='noticia.html'>Notícia 4</a></li>
-                <li><a href='noticia.html'>Notícia 5</a></li>
-                <li><a href='#'>Mais notícias...</a></li>
-            </ul>
-        </section>
-        <section>
-            <h1>Educação</h1>
-            <ul>
-                <li><a href='noticia.html'>Notícia 1</a></li>
-                <li><a href='noticia.html'>Notícia 2</a></li>
-                <li><a href='noticia.html'>Notícia 3</a></li>
-                <li><a href='noticia.html'>Notícia 4</a></li>
-                <li><a href='noticia.html'>Notícia 5</a></li>
-                <li><a href='#'>Mais notícias...</a></li>
-            </ul>
-        </section>
-        <section>
-            <h1>Política e Conflitos</h1>
-            <ul>
-                <li><a href='noticia.html'>Notícia 1</a></li>
-                <li><a href='noticia.html'>Notícia 2</a></li>
-                <li><a href='noticia.html'>Notícia 3</a></li>
-                <li><a href='noticia.html'>Notícia 4</a></li>
-                <li><a href='noticia.html'>Notícia 5</a></li>
-                <li><a href='#'>Mais notícias...</a></li>
-            </ul>
-        </section>
-        <section>
-            <h1>Saúde</h1>
-            <ul>
-                <li><a href='noticia.html'>Notícia 1</a></li>
-                <li><a href='noticia.html'>Notícia 2</a></li>
-                <li><a href='noticia.html'>Notícia 3</a></li>
-                <li><a href='noticia.html'>Notícia 4</a></li>
-                <li><a href='noticia.html'>Notícia 5</a></li>
-                <li><a href='#'>Mais notícias...</a></li>
-            </ul>
-        </section>
-        <section>
-            <h1>Internacional</h1>
-            <ul>
-                <li><a href='noticia.html'>Notícia 1</a></li>
-                <li><a href='noticia.html'>Notícia 2</a></li>
-                <li><a href='noticia.html'>Notícia 3</a></li>
-                <li><a href='noticia.html'>Notícia 4</a></li>
-                <li><a href='noticia.html'>Notícia 5</a></li>
-                <li><a href='#'>Mais notícias...</a></li>
-            </ul>
-        </section>
-        <section>
-            <h1>Esportes</h1>
-            <ul>
-                <li><a href='noticia.html'>Notícia 1</a></li>
-                <li><a href='noticia.html'>Notícia 2</a></li>
-                <li><a href='noticia.html'>Notícia 3</a></li>
-                <li><a href='noticia.html'>Notícia 4</a></li>
-                <li><a href='noticia.html'>Notícia 5</a></li>
-                <li><a href='#'>Mais notícias...</a></li>
-            </ul>
-        </section>
-    </div>
+<body onload="setNews()">
+<header class="header">
+    <a href='index.html'><img alt='Site&#39s Logo ' src='logo.png'></a>
+</header>
+<div class="container">
+    <section>
+        <h1>Tecnologia</h1>
+        <ul id="technologyList">
+        </ul>
+    </section>
+    <section>
+        <h1>Entretenimento</h1>
+        <ul id="entertainmentList">
+            <li><a href='noticia.html'>Notícia 1</a></li>
+            <li><a href='noticia.html'>Notícia 2</a></li>
+            <li><a href='noticia.html'>Notícia 3</a></li>
+            <li><a href='noticia.html'>Notícia 4</a></li>
+            <li><a href='noticia.html'>Notícia 5</a></li>
+            <li><a href='#'>Mais notícias...</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Negócios</h1>
+        <ul id="businessList">
+            <li><a href='noticia.html'>Notícia 1</a></li>
+            <li><a href='noticia.html'>Notícia 2</a></li>
+            <li><a href='noticia.html'>Notícia 3</a></li>
+            <li><a href='noticia.html'>Notícia 4</a></li>
+            <li><a href='noticia.html'>Notícia 5</a></li>
+            <li><a href='#'>Mais notícias...</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Ciência</h1>
+        <ul id="scienceList">
+            <li><a href='noticia.html'>Notícia 1</a></li>
+            <li><a href='noticia.html'>Notícia 2</a></li>
+            <li><a href='noticia.html'>Notícia 3</a></li>
+            <li><a href='noticia.html'>Notícia 4</a></li>
+            <li><a href='noticia.html'>Notícia 5</a></li>
+            <li><a href='#'>Mais notícias...</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Saúde</h1>
+        <ul id="healthList">
+            <li><a href='noticia.html'>Notícia 1</a></li>
+            <li><a href='noticia.html'>Notícia 2</a></li>
+            <li><a href='noticia.html'>Notícia 3</a></li>
+            <li><a href='noticia.html'>Notícia 4</a></li>
+            <li><a href='noticia.html'>Notícia 5</a></li>
+            <li><a href='#'>Mais notícias...</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Esportes</h1>
+        <ul id="sportsList">
+            <li><a href='noticia.html'>Notícia 1</a></li>
+            <li><a href='noticia.html'>Notícia 2</a></li>
+            <li><a href='noticia.html'>Notícia 3</a></li>
+            <li><a href='noticia.html'>Notícia 4</a></li>
+            <li><a href='noticia.html'>Notícia 5</a></li>
+            <li><a href='#'>Mais notícias...</a></li>
+        </ul>
+    </section>
+</div>
 </body>
 
 </html>
