@@ -41,7 +41,7 @@
     background-color: white
 }
 
-.ncontainer {
+.news_container {
     display: grid;
     grid-template-columns: 75vw;
     padding-left: 12.5vw
@@ -60,20 +60,25 @@ figure {
     .header {
         width: 15vw;
     }
+
     .container {
         grid-template-columns: 70vw;
         padding-left: 20vw
     }
-    .ncontainer {
+
+    .news_container {
         grid-template-columns: 70vw;
         padding-left: 20vw
     }
+
     .container h1 {
         font-size: 7vw;
     }
+
     .container li {
         font-size: 3vw;
     }
+
     .container a {
         margin: 10px;
         width: 50vw;
